@@ -14,6 +14,7 @@
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
         </script>
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/boss.js"></script>
 </head>
 
 <body>
@@ -39,6 +40,20 @@
             </div>
         </div>
     </nav>
+    <div class="wrapper">
+        <header class="header">
+            <label class="label-title" for="title-note">Titel:</label><br>
+            <input class="note" type="text" placeholder="Titel"><br>
+
+            <label class="label-date" for="date-note">Datum:</label><br>
+            <input class="date" type="date" placeholder="DD-MM-JJ"><br>
+    
+            <label class="label-info" for="info-note">Inhoud:</label><br>
+            <textarea class="content" type="text"></textarea><br>
+        </header>
+        <button class="give-note">Geef Notitie</button>
+        <!-- <button class="look-notes">Bekijk alle notities</button> -->
+    </div>
 </body>
 
 </html>

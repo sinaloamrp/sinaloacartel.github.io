@@ -18,19 +18,37 @@
 </head>
 
 <body>
-    <div class="wrapper container-fluid">
-        <header>
-            <h3 class="nav-sinaloa">𝑺𝒊𝒏𝒂𝒍𝒐𝒂 𝑪𝒂𝒓𝒕𝒆𝒍</h3>
-        </header>
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top rounded-4 nav container">
+        <div class="container">
+            <h1 class="title-sinaloa">𝑺𝒊𝒏𝒂𝒍𝒐𝒂 𝑪𝒂𝒓𝒕𝒆𝒍</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav info font-monospace ms-auto">
+                    <li class="nav-text">
+                        <a class="nav-link home text-light" href="main.html">Home</a>
+                    </li>
+                    <li class="nav-text">
+                        <a class="nav-link aboutme text-light" href="#">Prijzen</a>
+                    </li>
+                    <li class="nav-text">
+                        <a class="nav-link text-light" href="login.html">Inloggen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
         <footer>
-            <h1>Inloggen</h1>
-            <h4>Gebruikersnaam:</h4><br>
-            <input class="username" type="text" placeholder="gebruikersnaam">
+            <h1 class="log-in">Inloggen</h1>
+            <h4 class="title-username">Gebruikersnaam:</h4>
+            <input class="username" type="text" placeholder="gebruikersnaam"><br>
 
-            <h4>Wachtwoord:</h4>
-            <input class="password" type="text" placeholder="wachtwoord">
+            <h4 class="title-password">Wachtwoord:</h4>
+            <input class="password" type="password" placeholder="wachtwoord"><br>
             <button class="submit">submit</button>
-            <p class="info"></p>
         </footer>
     </div>
 </body>

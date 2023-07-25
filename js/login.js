@@ -3,16 +3,20 @@ console.log("JavaScript Loaded");
 const loginUsername = document.querySelector(".username")
 const loginPassword = document.querySelector(".password")
 
-const infoAccount = document.querySelector('.info');
-
 const username = 'sinaloaMRP'
 const password = "aap-sinaloa"
 
 const submit = document.querySelector(".submit");
 submit.addEventListener('click', function () {
     if (loginUsername.value == username && loginPassword.value == password) {
-        infoAccount.innerHTML += "Logged in succesfully"
+        alert('U bent ingelogd')
+        bossPage()
     } else {
-        infoAccount.innerHTML += `Foute Gebruikersnaam of Wachtwoord`
+        alert('Foute gebruikersnaam of wachtwoord!')
     }
 })
+
+
+function bossPage() {
+    window.location.href = "boss.html"
+}

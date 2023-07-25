@@ -2,6 +2,7 @@ body {
     background-color: beige;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -11,9 +12,9 @@ body {
 }
 
 .welcome {
-    grid-column: 1 / 12;
+    grid-column: 2 / 12;
     text-align: center;
-    grid-row: 5;
+    grid-row: 3;
     font-size: 40px;
 }
 
@@ -21,43 +22,81 @@ body {
     font-size: 80px;
 }
 
-.loader {
-    grid-column: 6 / 12;
-    grid-row: 15;
-    text-align: center;
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid black;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-  }
-  
-  /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-.loading {
-    grid-column: 1 / 12;
-    text-align: center;
-    grid-row: 12;
+.home {
+    margin-left: 200px;
 }
 
-header {
-    grid-column: 1 / 14;
-    grid-row: 1;
+.info {
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 100px;
+    gap: 30px;
 }
 
-.nav-sinaloa {
-    font-size: 40px;
+.title-sinaloa {
+    color: white;
+}
+
+footer {
+    grid-row: 3;
+    background-color: white;
+    height: 500px;
+    grid-column: 2 / 12;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.log-in {
+    font-size: 60px;
+    font-weight: bold;
+    float: left;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.title-username {
+    margin-top: 130px;
+}
+
+.title-password {
     margin-top: 20px;
-    margin-left: 20px;
+}
+
+.password,
+.username {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.submit {
+    margin-top: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+
+.submit:hover {
+    background-color: beige;
+}
+
+.give-note {
+    grid-row: 6;
+    height: 50px;
+    grid-column: 3;
+    margin-top: 20px;
+}
+
+.header {
+    grid-row: 3;
+    grid-column: 3 / 6;
+}
+
+.label-title,
+.label-date,
+.label-info {
+    font-size: 40px;
+}
+
+.inhoud {
+    height: 60px;
 }
